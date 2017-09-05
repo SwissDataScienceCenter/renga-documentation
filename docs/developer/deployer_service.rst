@@ -41,11 +41,10 @@ Authentication/Authorization
 
 All deployer endpoints require a JWT bearer token to be supplied with the
 ``Authorization`` header. The tokens are verified using the public key of the
-JWT issuer provided to the deployer at service initialization. If the :ref:`resource_manager` is configured,
-the deployer exchanges the bearer token for a resource manager-signed token
-that is used to ascertain the user's access to the requested resources.
-The token exchange happens on behalf of the user/client without any required
-action.
+JWT issuer provided to the deployer at service initialization. If the :ref:`resource_manager` is configured, the deployer exchanges the bearer token for a
+resource manager-signed token that is used to ascertain the user's access to
+the requested resources. The token exchange happens on behalf of the
+user/client without any required action.
 
 
 Configuration
